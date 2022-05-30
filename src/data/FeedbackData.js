@@ -3,7 +3,7 @@ const FeedbackData = [
     rating: 10, 
     text: "Some random text nr 1"},
   {id: 2,
-    rating: 8, 
+    rating: 4, 
     text: "Some random text nr 2"},
 
     {id: 3,
