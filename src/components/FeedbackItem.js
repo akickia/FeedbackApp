@@ -10,7 +10,7 @@ const FeedbackItem = ({item, handleDelete}) => {
     <Card>
       <div className="num-display">{item.rating}</div>
         <button onClick={() => handleDelete(item.id)} className="close">
-          <FaTimes color="#B000B9" /> 
+          <FaTimes color="#000" /> 
         </button>
       <div className="text-display">{item.text}</div>
     </Card>

@@ -2,28 +2,24 @@
   "feedback": [
     {
       "id": 1,
-      "rating": 8,
-      "text": "Some random text nr 1"
+      "rating": 9,
+      "text": "I was very happy with your service. Thank you very much! "
     },
     {
       "id": 2,
-      "rating": 4,
-      "text": "Some random text nr 2"
+      "rating": 5,
+      "text": "It could have been better I think"
     },
     {
       "id": 3,
       "rating": 2,
-      "text": "Some random text nr 3"
+      "text": "Not pleased at all"
     },
     {
       "rating": 10,
-      "text": "Text from server",
+      "text": "Everything was great! ",
       "id": 4
-    },
-    {
-      "text": "Hejsansvejsan på dejsan",
-      "rating": 10,
-      "id": 5
     }
+
   ]
 }
