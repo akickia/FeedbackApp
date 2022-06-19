@@ -18,6 +18,11 @@ export const FeedbackProvider = ({children}) => {
     setIsLoading(false);
   };
 
+  const [feedbackEdit, setFeedbackEdit] = useState({
+    item: {},
+    edit: false
+  })
+ 
 const addFeedback = async (newFeedback) => {
   const response = await fetch (`/feedback`, {
     method: "POST",
@@ -31,11 +36,25 @@ const addFeedback = async (newFeedback) => {
   setFeedback([data, ...feedback]);
 }
 
+const updateFeedback = (id, updItem) => {
+ setFeedback(feedback.map((item) => (item.id === id ? { ...item, ...updItem } : item )));
+}
+
+const editFeedback = (item) => {
+  setFeedbackEdit ({
+    item,
+    edit: true
+  })
+}
+
   return (
     <FeedbackContext.Provider value={{
       feedback, 
       isLoading,
       addFeedback,
+      editFeedback,
+      feedbackEdit,
+      updateFeedback,
       }}
       >
       {children}

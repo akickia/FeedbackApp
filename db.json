@@ -19,7 +19,11 @@
       "rating": 10,
       "text": "Everything was great! ",
       "id": 4
+    },
+    {
+      "text": "I was very happy with your service. Thank you very much! ",
+      "rating": 7,
+      "id": 5
     }
-
   ]
 }
